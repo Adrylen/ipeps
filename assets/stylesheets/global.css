@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+
+  --color-primary: #4043BE;
+  --color-primary-content: #4043BE;
+  --color-secondary: #C14190;
+  --color-secondary-content: #C14190;
+  --color-neutral: #E5E5F6;
+}
+
+@font-face {
+  font-family: 'Brusher';
+  src: url('/assets/fonts/brusher/Brusher.ttf');
+}
+
+@font-face {
+  font-family: 'Bristol';
+  src: url('/assets/fonts/bristol/Bristol.otf') format('opentype');
+}
+
+:root {
+  --color-gradient: linear-gradient(
+    to left bottom,
+    rgb(0, 221, 255) 0%,
+    rgb(255, 0, 212) 100%
+  );
+}
+
+html,
+body,
+#__nuxt {
+  height: 100%;
+}
+
+.bg-color-gradient {
+  background: var(--color-gradient);
+}
+
+.font-primary {
+  font-family: "Brusher", sans-serif;
+}
+
+.font-logo-secondary {
+  font-family: "Bristol", sans-serif;
+}
