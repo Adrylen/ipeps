@@ -12,7 +12,7 @@ import { EnvelopeIcon, DevicePhoneMobileIcon } from '@heroicons/vue/24/outline';
     'rounded-2xl',
     'shadow-2xl/50',
     'px-0', 'sm:px-8',
-    'w-full',
+    'w-full', 'md:w-auto',
   ]">
     <figure class="h-[150px]">
       <img
